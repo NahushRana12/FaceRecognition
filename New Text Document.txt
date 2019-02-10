@@ -1,0 +1,3 @@
+create dataset-->done
+train the recognizer
+create a detector
