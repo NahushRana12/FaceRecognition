@@ -1,6 +1,7 @@
 import cv2
 import sqlite3
 import numpy as np
+import pandas as pd
 
 faceDetect = cv2.CascadeClassifier('haarcascade_frontalface_default.xml');
 cam = cv2.VideoCapture(0);
@@ -38,6 +39,6 @@ while(True):
     if(sampleNum>40):
         break
  
-
+print("added pandas")
 cam.release()
 cv2.destroyAllWindows()
