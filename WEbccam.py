@@ -10,7 +10,9 @@ while(True):
     faces = faceDetect.detectMultiScale(gray, 1.3, 5);
     for(x, y, w, h) in faces:
         cv2.rectangle(img, (x,y), (x+W, y+h), (0, 255, 0), 2)
+    # Show rectangle
     cv2.imshow("Face", img);
+    # press 'q' to quit.
     if(cv2.waitKey(1) == ord('q')):
         break;
 
